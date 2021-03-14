@@ -1,0 +1,7 @@
+include ':lifecycleactivity'
+include ':dialog'
+include ':notificationapp'
+include ':toastapp'
+include ':intentfilter'
+include ':multiactivity'
+rootProject.name = "Practice_2"
