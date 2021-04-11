@@ -1,0 +1,5 @@
+include ':loadermanger'
+include ':looper'
+include ':data_thread'
+include ':app'
+rootProject.name = "Project_4"
