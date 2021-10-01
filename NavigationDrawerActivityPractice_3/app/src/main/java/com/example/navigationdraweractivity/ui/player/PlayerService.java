@@ -21,7 +21,11 @@ public class PlayerService extends Service {
     }
     @Override
     public int onStartCommand(Intent intent, int flags, int startId){
-        mediaPlayer.start();
+        //mediaPlayer.start();
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.oneplus.filemanager");
+        if (launchIntent != null) {
+            startActivity(launchIntent);
+        }
         return START_STICKY;
     }
     @Override

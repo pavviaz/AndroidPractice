@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,8 +25,9 @@ public class MainActivity extends AppCompatActivity implements
 
         txt = (TextView) findViewById(R.id.textEdit);
 
-
+        
     }
+
 
     public void onClick(View view)
     {

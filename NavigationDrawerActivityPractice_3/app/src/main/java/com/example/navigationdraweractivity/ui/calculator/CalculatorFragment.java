@@ -42,7 +42,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
         String expr = String.valueOf(txtExpression.getText());
 
         List<String> expression = RPN_Parser.getParsedStr(expr);
-        if (!expression.contains("Error")) {
+        if (expression.size() != 0 && !expression.contains("Error")) {
             txtResult.setText(String.valueOf(PRN_Core.calc(expression)));
         }
         else {
